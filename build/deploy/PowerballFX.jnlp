@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PowerballFX.jnlp">
+  <information>
+    <title>PowerballFX</title>
+    <vendor>Luis Dominguez</vendor>
+    <description>Powerball Lottery Generator 2016</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PowerballFX.jar" size="383295" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="application.Main"  name="Powerball Lottery Generator 2016" />
+  <update check="background"/>
+</jnlp>

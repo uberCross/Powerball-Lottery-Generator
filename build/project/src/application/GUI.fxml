@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GUIController">
+   <children>
+      <HBox alignment="CENTER" layoutX="100.0" layoutY="37.0" prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label id="title" text="Powerball Lottery Generator 2016" />
+         </children>
+      </HBox>
+      <GridPane layoutX="225.0" layoutY="400.0" prefHeight="51.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="genButton" fx:id="generateBtn" mnemonicParsing="false" onAction="#getPBNums" text="Generate!" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#updateWinners" text="Update" GridPane.halignment="CENTER" />
+         </children>
+      </GridPane>
+      <HBox id="pbNumContainer" alignment="CENTER" layoutX="200.0" layoutY="208.0" prefHeight="100.0" prefWidth="400.0">
+         <children>
+            <Label id="powerballNumLabel" fx:id="PBLabel" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="80.0" layoutY="500.0" prefHeight="50.0" prefWidth="250.0">
+         <children>
+            <Label id="datelabel" fx:id="dateLabel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
